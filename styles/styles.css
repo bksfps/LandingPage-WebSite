@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato');
 
 * {
+    font-family: 'Lato';
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
 }
 
 :root {
@@ -74,7 +81,7 @@ button, .link-action {
 }
 
 .btn-action:hover {
-    background-color: var(--bluedark);
+    background-color: var(--green);
     border: 1px soid var(--bluedark);
 }
 
@@ -112,7 +119,7 @@ section {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     color: var(--white);
     letter-spacing: 6px;
 }
@@ -136,7 +143,7 @@ strong {
 }
 
 .second-section {
-    background-color: var(--green);
+    background-color: var(--bluedark);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -167,40 +174,43 @@ strong {
 }
 
 .second-section .title {
-    color: var(--bluedark);
-}
-
-.third-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
-
-.third-section > title {
     color: var(--white);
 }
 
-.third-section div {
-    align-items: center;
+.container {
+    padding: 15px 9%;
+    padding-bottom: 100px;
+}
+
+.container .heading {
     text-align: center;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-    
+    padding-bottom: 35px;
+    color: #fff;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    font-size: 50px;
 }
 
-.third-section > div p {
-    max-width: 600px;
-    color: var(--white);
-    letter-spacing: 1px;
-    padding: 5px;
+.container .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 15px;
 }
+
+.container .box-container .box {
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    background-color: var(--bluedark);
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.container .box-container .box h3 {
+    padding: 20px;
+}
+
 
 footer {
-    background-color: var(--green);
+    background-color: var(--blue);
     padding: 4rem;
     display: flex;
     flex-direction: column;
@@ -214,8 +224,3 @@ footer > div {
     flex-wrap: wrap;
 }
 
-footer p {
-    text-align: center;
-    letter-spacing: 2px;
-    
-}

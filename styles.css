@@ -17,6 +17,11 @@
 
 }
 
+html {
+    font-family: 'Lato';
+    overflow-x: hidden;
+}
+
 body {
     background-color: var(--bluedark);
     height: 100vh;
@@ -32,7 +37,7 @@ body {
     list-style: none;
     position: relative;
     background-color: var(--blue);
-    padding: 40px 20px 20px 20px;
+    padding: 20px 20px 20px 15px;
 }
 .logo img {width: 80px;}
 .menu {display: flex;}
@@ -128,61 +133,112 @@ body {
 }
 
 /* Main - Sections */
-main {
+.first-section {
+    height: 100vh;
+    background-image: linear-gradient(rgba(29,29,29,0.8),rgba(29,29,29,0.8) ), url('images/hero-img.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-}
-
-section {
-    padding: .4rem;
-}
-
-.first-section{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 2rem;
+    justify-content: center;
     align-items: center;
-    min-height: 650px;
-
 }
 
-.first-section > div {
+.first-section .conteudo-principal {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    min-width: 300px;
+    align-items: center;
+    justify-content: center;
 }
 
-h1 {
-    font-size: 3rem;
+.first-section h1 {
     color: var(--white);
-    letter-spacing: 6px;
+    font-size: 3.5vw;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+}
+
+.first-section h2 {
+    color: var(--white);
+    font-size: 1.5vw;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    letter-spacing: 2px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.btn a {
+    width: 15vw;
+    height: 260px;
+    height: auto;
+    padding: 1vw 1vw;
+    font-size: 1vw;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: var(--green);
+    border-radius: 10px;
+    color: black;
+    font-weight: 700;
+    margin-top: 5rem;
+    transition: all 400ms ease-in;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+.btn a:hover {
+    border: 1px solid var(--green);
+    background-color: transparent;
+}
+
+@media (max-width: 768px) {
+    .first-section h1 {
+        font-size: 5vw;
+    }
+
+    .first-section h2 {
+        font-size: 2vw;
+    }
+
+    .btn a {
+        font-size: 3vw;
+        width: 40vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .first-section h1 {
+        font-size: 5vw;
+    }
+
+    .first-section h2 {
+        font-size: 2vw;
+    }
+
+    .btn a {
+        font-size: 3vw;
+        width: 30vw;
+    }
 }
 
 strong {
     color: var(--green);
 }
 
-.first-section p {
-    color: var(--white);
-}
+/* third section */
 
-.box-img-main {
-    max-width: 600px;
-    padding: 1rem;
-}
-
-.img-main {
-    border-radius: 10px;
-    width: 100%;
-}
-
-/* Segunda Section */
-
-.second-section {
-    background-color: var(--bluedark);
+.third-section {
+    background-color: var(--white);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -190,7 +246,7 @@ strong {
     gap: 2rem;
 }
 
-.second-section ul {
+.third-section ul {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -199,33 +255,29 @@ strong {
     flex-wrap: wrap;
 }
 
-.second-section ul li {
+.third-section ul li {
     color: var(--white);
     padding: 2rem;
     font-size: 20px;
     letter-spacing: 1px;
 }
 
-.second-section ul li:hover {
+.third-section ul li:hover {
     color: var(--bluedark);
     transition: .4s;
     cursor: default;
 }
 
-.second-section .title {
-    color: var(--white);
-}
-
 /* Boxes */
 .container {
     padding: 15px 9%;
-    padding-bottom: 100px;
+    padding-bottom: 100px;  
 }
 
 .container .heading {
     text-align: center;
     padding-bottom: 35px;
-    color: #fff;
+    color: black;
     text-shadow: 0 5px 10px rgba(0,0,0,.2);
     font-size: 50px;
 }
@@ -251,25 +303,141 @@ strong {
 .container .box-container .box {
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
     border-radius: 30px;
-    background-color: rgb(90, 89, 89);
     text-align: center;
     padding: 30px 20px;
-    border: 1px solid var(--green);
     flex: 1 1 270px;
     max-width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+}
+
+.container .box-container .box img {
+    width: 20vw;
+    height: 20vw;
 }
 
 .container .box-container .box h3 {
     padding: 20px;
-    color: var(--green);
     font-size: x-large;
 }
 
 .container .box-container .box p {
     padding: 20px;
+}
+
+.container .box-container .box .botao {
+    margin-top: 10px;
+    display: inline-block;
+    background-color: var(--green);
     color: #fff;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px 25px;
+}
+
+.container .box-container .box .botao:hover {
+    box-shadow: 0 10px 15px rgba(0,0,0,.2);
+}
+
+
+
+/* Sobre nós */
+
+.sobre-nos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10vw 5vw;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.sobre-nos .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.contentsobre {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.contentsobre h2 {
+    font-size: 3vw;
+    margin-bottom: 20px;
+}
+
+.contentsobre p {
+    font-size: 1.5vw;
+    line-height: 1.5;
+}
+
+.img-moto {
+    flex: 1;
+    text-align: center;
+}
+
+.img-moto img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 15px;
+}
+
+@media (max-width: 1280px) {
+    .contentsobre h2 {
+        font-size: 4vw;
+    }
+
+    .contentsobre p {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 1024px) {
+    .contentsobre h2 {
+        font-size: 4vw;
+    }
+
+    .contentsobre p {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .sobre-nos .main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contentsobre {
+        padding: 0;
+    }
+
+    .contentsobre h2 {
+        font-size: 5vw;
+    }
+
+    .contentsobre p {
+        font-size: 3vw;
+    }
+
+    .img-moto img {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contentsobre h2 {
+        font-size: 6vw;
+    }
+
+    .contentsobre p {
+        font-size: 4vw;
+    }
 }
 
 /* Footer */

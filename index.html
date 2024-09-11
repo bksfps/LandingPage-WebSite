@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>EcoScooters</title>
 </head>
@@ -16,7 +16,7 @@
                 <input type='checkbox' id='check' />
                 <span class="menu">
                     <li><a href="">Home</a></li>
-                    <li><a href="">Produtos</a></li>
+                    <li><a href="#modelos">Produtos</a></li>
                     <li><a href="#services">Serviços</a></li>
                     <li><a href="">Sobre</a></li>
                     <li><a href="">Contato</a></li>
@@ -30,52 +30,76 @@
 
     <main>
         <section class="first-section">
-            <div>
-                <h1>Bem vindo à <strong>Eco Scooters</strong></h1>
-                <p>Descubra a liberdade sobre duas rodas com a Eco Scooters!</p>
-                <a  class="btn-action link-action" href="#">Alugar agora!</a>
-            </div>
-            <div class="box-img-main">
-                <img class="img-main" src="images/box.png" alt="">
+            <div class="conteudo-principal">
+                <h1>Alugue Sua <strong>EcoScooter</strong> Hoje!</h1>
+                <h2>Descubra a liberdade sobre duas rodas com a <strong>Eco Scooters</strong>!</p>
+                    <div class="btn">
+                         <a href="#modelos" class="alugar">Alugue agora!</a>
+                        <a href="#sobrenos" class="saiba-mais">Saiba mais!</a>
+                    </div>
             </div>
 
         </section>
 
-        <section id="services" class="second-section">
+        <section id="sobrenos" class="sobre-nos">
+            <div class="main">
+                <div class="contentsobre">
+                    <h2>Sobre nós</h2>
+                    <p>Na Eco Scooters, acreditamos em uma mobilidade urbana mais inteligente e sustentável. Fundada com o propósito de oferecer soluções de transporte que respeitam o meio ambiente, nossa empresa se dedica a proporcionar uma experiência de locomoção eficiente e ecológica. Com uma frota de scooters e motos elétricas, ajudamos você a reduzir sua pegada de carbono enquanto se desloca com estilo e praticidade.</p>
+                </div>
+                <div class="img-moto">
+                    <img src="images/box.png" alt="">
+                </div>
+
+            </div>
+        </section>
+
+        <section id="modelos" class="third-section">
             <div class="container">
-                <h1 class="heading">Serviços</h1>
+                <h1 class="heading">Modelos</h1>
                 <div class="box-container">
                     <div class="box">
-                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="var(--green)" class="bi bi-tools" viewBox="0 0 16 16">
-                            <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3q0-.405-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708M3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z"/>
-                          </svg></a>
-                          <h3>Suporte 24/7</h3>
+                        <img src="images/produto.png" alt="">
+                          <h3>Modelo 1</h3>
                           <p>Suporte completo durante o período de aluguel, para você viajar com tranquilidade.</p>
+                          <a href="#" class="botao">Saiba mais</a>
                     </div>
 
                     <div class="box">
-                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="var(--green)" class="bi bi-bicycle" viewBox="0 0 16 16">
-                            <path d="M4 4.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1v.5h4.14l.386-1.158A.5.5 0 0 1 11 4h1a.5.5 0 0 1 0 1h-.64l-.311.935.807 1.29a3 3 0 1 1-.848.53l-.508-.812-2.076 3.322A.5.5 0 0 1 8 10.5H5.959a3 3 0 1 1-1.815-3.274L5 5.856V5h-.5a.5.5 0 0 1-.5-.5m1.5 2.443-.508.814c.5.444.85 1.054.967 1.743h1.139zM8 9.057 9.598 6.5H6.402zM4.937 9.5a2 2 0 0 0-.487-.877l-.548.877zM3.603 8.092A2 2 0 1 0 4.937 10.5H3a.5.5 0 0 1-.424-.765zm7.947.53a2 2 0 1 0 .848-.53l1.026 1.643a.5.5 0 1 1-.848.53z"/>
-                          </svg></a>
-                          <h3>Motos elétricas</h3>
+                        <img src="images/produto.png" alt="">
+                          <h3>Modelo 2</h3>
                           <p>Perfeitas para percorrer distâncias curtas e se locomover pela cidade de maneira ágil.</p>
+                          <a href="#" class="botao">Saiba mais</a>
                     </div>
 
                     <div class="box">
-                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--green)" class="bi bi-wallet2" viewBox="0 0 16 16">
-                            <path d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5z"/>
-                          </svg></a>
-                          <h3>Preços</h3>
+                        <img src="images/produto.png" alt="">
+                          <h3>Modelo 3</h3>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, aliquam!</p>
+                          <a href="#" class="botao">Saiba mais</a>
                     </div>
 
                     <div class="box">
-                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--green)" class="bi bi-tools" viewBox="0 0 16 16">
-                            <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3q0-.405-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708M3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z"/>
-                          </svg></a>
-                          <h3>Teste</h3>
+                        <img src="images/produto.png" alt="">
+                          <h3>Modelo 4</h3>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, aliquam!</p>
+                          <a href="#" class="botao">Saiba mais</a>
                     </div>
+                    <div class="box">
+                        <img src="images/produto.png" alt="">
+                        <h3>Modelo 5</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, aliquam!</p>
+                        <a href="#" class="botao">Saiba mais</a>
+                    </div>
+
+                    <div class="box">
+                        <img src="images/produto.png" alt="">
+                        <h3>Modelo 6</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, aliquam!</p>
+                        <a href="#" class="botao">Saiba mais</a>
+
+                    </div>
+
                 </div>
             </div>
 

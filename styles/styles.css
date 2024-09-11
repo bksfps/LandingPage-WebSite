@@ -23,6 +23,7 @@ body {
     font-family: 'Lato';
 }
 
+/* HEADER */
 .nav-bar {
     width: 100%;
     display: flex;
@@ -100,7 +101,7 @@ body {
     #check:checked ~ .menu {right: 0;}
 }
 
-
+/* Botão verde */
 .link-action {
     padding: .6rem;
     font-size: .9rem;
@@ -126,6 +127,7 @@ body {
     text-align: center;
 }
 
+/* Main - Sections */
 main {
     display: flex;
     flex-direction: column;
@@ -177,6 +179,8 @@ strong {
     width: 100%;
 }
 
+/* Segunda Section */
+
 .second-section {
     background-color: var(--bluedark);
     display: flex;
@@ -212,6 +216,7 @@ strong {
     color: var(--white);
 }
 
+/* Boxes */
 .container {
     padding: 15px 9%;
     padding-bottom: 100px;
@@ -266,6 +271,8 @@ strong {
     padding: 20px;
     color: #fff;
 }
+
+/* Footer */
 
 footer {
     background-color: var(--blue);

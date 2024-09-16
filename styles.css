@@ -80,10 +80,12 @@ body {
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
+    color: white;
 }
 .close-menu {
     top: 20px;
     right: 20px;
+    color: white;
 }
 #check {display: none;}
 @media(max-width: 610px){
@@ -97,7 +99,7 @@ body {
         top: 0;
         right: -100%;
         z-index: 100;
-        background-color: var(--bluedark);
+        background-color: var(--blue);
         transition: all 0.2s ease-in-out;
     }
     .menu li {margin-top: 40px;}
@@ -238,13 +240,14 @@ strong {
 /* third section */
 
 .third-section {
-    background-color: var(--white);
+    background-color: var(--blue);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2rem;
 }
+
 
 .third-section ul {
     list-style: none;
@@ -277,9 +280,10 @@ strong {
 .container .heading {
     text-align: center;
     padding-bottom: 35px;
-    color: black;
+    color: white;
     text-shadow: 0 5px 10px rgba(0,0,0,.2);
     font-size: 50px;
+    letter-spacing: 5px;
 }
 
 .container .box-container {
@@ -324,7 +328,7 @@ strong {
 }
 
 .container .box-container .box p {
-    padding: 20px;
+    padding: 15px;
 }
 
 .container .box-container .box .botao {
@@ -339,6 +343,29 @@ strong {
 
 .container .box-container .box .botao:hover {
     box-shadow: 0 10px 15px rgba(0,0,0,.2);
+}
+
+@media (max-width: 768px) {
+    .third-section .box img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .third-section .box img {
+        width: 100%;
+        max-width: 200px; /* Limita o tamanho máximo para evitar exageros */
+        height: auto; /* Mantém a proporção da imagem */
+        margin: 0 auto;
+        display: block;
+    }
+
+    /* Aumenta o tamanho da box para telas pequenas */
+    .third-section .box {
+        width: 100%;
+        padding: 10px;
+    }
 }
 
 
@@ -368,7 +395,7 @@ strong {
 
 .contentsobre h2 {
     font-size: 3vw;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .contentsobre p {
@@ -440,24 +467,228 @@ strong {
     }
 }
 
+.fourth-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    color: white;
+    padding: 4rem;
+    background-color: var(--green);
+}
+
+.fourth-section .box {
+    max-width: 600px;
+}
+
+.fourth-section .box h1 {
+    font-size: 3rem;
+    padding: 1.5rem;
+}
+
+.fourth-section .box p {
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+
+iframe {
+    border-radius: 2em;
+    border: none;
+    width: 500px;
+    height: 500px;
+    transition: 0.3s ease-in-out;
+}
+
+iframe:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .fourth-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .fourth-section .box {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .fourth-section iframe {
+        width: 100%;
+        height: 300px; /* Ajusta a altura do mapa para dispositivos menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .fourth-section .box {
+        padding: 5px;
+        font-size: 14px; /* Reduz o tamanho do texto para telas pequenas */
+    }
+
+    .fourth-section iframe {
+        height: 250px; /* Altura menor para telas muito pequenas */
+    }
+}
+
+.fifth-section {
+    padding: 20px;
+    background-color: var(--blue);
+}
+
+.wrapper {
+    max-width: 75%;
+    margin: auto;
+    color: white;
+  }
+  
+  .wrapper > h1 {
+    margin: 1.5rem 0;
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  .wrapper > h1 {
+    letter-spacing: 3px;
+  }
+  
+  .accordion {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+  }
+  
+  .accordion i {
+    font-size: 1.6rem;
+  }
+  
+  .active,
+  .accordion:hover {
+    background-color: var(--green);
+  }
+  .pannel {
+    padding: 0 2rem 2.5rem 2rem;
+    background-color: var(--green);
+    overflow: hidden;
+    background-color: var(--green);
+    display: none;
+  }
+  .pannel p {
+    color: white;
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+  
+  .faq {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+  }
+  .faq.active {
+    border: none;
+  }
+
+
 /* Footer */
 
-footer {
-    background-color: var(--blue);
-    padding: 4rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+.footer .container{
+	max-width: 1170px;
+	margin:auto;
+    border-top: 1px solid white;
+}
+.footer .container .row{
+	display: flex;
+	flex-wrap: wrap;
+}
+.footer .container .row ul{
+	list-style: none;
+}
+.footer{
+	background-color: var(--blue);
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: var(--green);
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: var(--green);
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
 }
 
-footer > div {
-    justify-content: center;
-    display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
 }
 
-#zap:hover {
+/* #zap:hover {
     fill: var(--green);
     transition: 0.4s ease-in-out;
 }
@@ -466,4 +697,4 @@ footer > div {
     fill: purple;
     transition: 0.4s ease-in-out;
 }
-
+ */

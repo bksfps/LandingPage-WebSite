@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="images/logo.jpeg">
     <title>DHC</title>
 </head>
 <body>
@@ -21,7 +22,7 @@
                 <input type='checkbox' id='check' />
                 <span class="menu">
                     <li><a href="">Home</a></li>
-                    <li><a href="#modelos">Produtos</a></li>
+                    <li><a href="#modelos">Cotação</a></li>
                     <li><a href="#sobrenos">Sobre</a></li>
                     <li><a href="#">Contato</a></li>
                     <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
@@ -33,69 +34,108 @@
 
 
     <main>
-        <section class="first-section">
-            <div class="conteudo-principal">
-                <h1>Proteja-se agora com a DHC Hoje!</h1>
-                <h2>A segurança que você precisa, com a confiança que você merece!</p>
-                    <div class="btn">
-                         <a href="#modelos" class="alugar">Solicitar Cotação!</a>
-                        <a href="#sobrenos" class="saiba-mais">Saiba mais!</a>
-                    </div>
+      <section class="first-section">
+        <div class="overlay"></div>
+        <div class="conteudo-principal">
+            <h1>Proteja-se agora com a DHC!</h1>
+            <h2>A segurança que você precisa, com a confiança que você merece!</h2>
+            <div class="btn">
+                <a href="#modelos" class="alugar">Solicitar Cotação!</a>
+                <a href="#sobrenos" class="saiba-mais">Saiba mais!</a>
             </div>
-
-        </section>
+        </div>
+    </section>
+    
+    
 
         <section id="sobrenos" class="sobre-nos">
             <div class="main">
                 <div class="contentsobre">
-                    <h2>Sobre nós</h2>
-                    <p>Na Eco Scooters, acreditamos em uma mobilidade urbana mais inteligente e sustentável. Fundada com o propósito de oferecer soluções de transporte que respeitam o meio ambiente, nossa empresa se dedica a proporcionar uma experiência de locomoção eficiente e ecológica. Com uma frota de scooters e motos elétricas, ajudamos você a reduzir sua pegada de carbono enquanto se desloca com estilo e praticidade.</p>
+                    <h2>Por que se associar à DHC?</h2>
+                    <p>Na DHC, oferecemos muito mais do que proteção veicular: proporcionamos tranquilidade e segurança para você e o seu veículo. Com um serviço acessível, ágil e confiável, garantimos a melhor experiência para os nossos associados.</p>
                 </div>
-                <div class="img-moto">
-                    <img src="images/box.png" alt="">
-                </div>
-
+                <div class="video-container">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/TSvzUaI7W28" 
+                      title="Vídeo sobre a DHC" frameborder="0" allowfullscreen>
+                  </iframe>
+              </div>
             </div>
         </section>
 
         <section id="modelos" class="third-section">
-            <div class="container">
-                <div class="box-container">
-                    <div class="box">
-                      <i class="fas fa-map-marker-alt fa-2x custom-icon"></i> 
-                          <h3>Rastreamento em Tempo Real</h3>
-                          <p>Monitore seu veículo a qualquer momento pelo app ou web.</p>
-                    </div>
-
-                    <div class="box">
+          <div class="container">
+              <div class="box-container">
+      
+                  <div class="box">
+                      <i class="fa-solid fa-truck-medical fa-2x custom-icon"></i> 
+                      <h3>Assistência 24h</h3>
+                      <p>Guincho, chaveiro, troca de pneu e muito mais para sua segurança.</p>
+                  </div>
+      
+                  <div class="box">
                       <i class="fas fa-shield-alt fa-2x custom-icon"></i> 
-                          <h3>Segurança e Precisão</h3>
-                          <p>Tecnologia avançada para localização exata e confiável.</p>
-                    </div>
+                      <h3>Proteção Completa</h3>
+                      <p>Contra roubo, furto, colisão, incêndio e fenômenos naturais.</p>
+                  </div>
+      
+                  <div class="box">
+                      <i class="fa-solid fa-file-circle-check fa-2x custom-icon"></i>
+                      <h3>Sem Burocracia</h3>
+                      <p>Adesão simplificada e atendimento rápido e humanizado.</p>
+                  </div>
+      
+                  <div class="box">
+                      <i class="fa-solid fa-hand-holding-dollar fa-2x custom-icon"></i>
+                      <h3>Custo-Benefício</h3>
+                      <p>Planos acessíveis, sem análise de perfil ou restrição de idade do veículo.</p>
+                  </div>
+      
+              </div>
+          </div>
+      </section>
 
-                    <div class="box">
-                      <i class="fas fa-globe-americas fa-2x custom-icon"></i>
-                          <h3>Cobertura Nacional</h3>
-                          <p>Seu veículo rastreado em qualquer lugar do Brasil.</p>
-                    </div>
 
-                    <div class="box">
-                      <i class="fas fa-bell fa-2x custom-icon"></i>
-                          <h3>Alertas e Notificações</h3>
-                          <p>Receba avisos instantâneos em caso de movimentação suspeita.</p>
-                    </div>
-
-                </div>
+      <section id="cotacao" class="cota-section">
+        <h2>Seja um associado</h2>
+        <form class="cota-form" action="https://formsubmit.co/bruno.kenji15@outlook.com" method="POST">
+            
+            <div class="input-container">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" name="Nome" placeholder="Nome" required>
             </div>
+    
+            <div class="input-container">
+                <i class="fa-solid fa-phone"></i>
+                <input type="tel" name="Celular" placeholder="Celular" required>
+            </div>
+    
+            <div class="input-container">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" name="Email" placeholder="E-mail" required>
+            </div>
+    
+            <div class="input-container">
+                <i class="fa-solid fa-city"></i>
+                <input type="text" name="Cidade" placeholder="Cidade" required>
+            </div>
+    
+            <button type="submit">Solicitar Cotação</button>
+    
+        </form>
+    </section>
+    
 
-        </section>
+
+
         <section id="location" class="fourth-section">
             <div class="box">
                 <h1>Nossa Localização</h1>
-                <p>A EcoScooters está localizada no centro da cidade, na Rua da Mobilidade, 123 - Centro, Sua Cidade. Nossa posição estratégica facilita a retirada e devolução das scooters, estando próxima aos principais pontos de transporte e áreas comerciais. Para conveniência adicional, oferecemos também pontos de coleta e entrega em locais-chave ao redor da cidade. Para qualquer dúvida sobre nossa localização ou para obter direções, entre em contato conosco e estaremos prontos para ajudar!</p>
+                <p>Estamos estrategicamente localizados em Osasco, uma das cidades mais dinâmicas da Grande São Paulo. Nossa sede está posicionada para oferecer suporte rápido e eficiente a todos os nossos clientes, garantindo um atendimento ágil e personalizado.</p>
+                <p>Seja para contratar nossos serviços ou esclarecer dúvidas, estamos sempre prontos para recebê-lo com a melhor solução em rastreamento veicular e proteção automotiva.</p>
+                <p>Venha nos visitar e conheça de perto como podemos garantir mais segurança para você e seu veículo!</p>
             </div>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116902.27862699165!2d-46.63671563247242!3d-23.7046863767392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce582da261e6b1%3A0x5ceb2e6bcbc1483b!2sPaulista!5e0!3m2!1spt-BR!2sbr!4v1726504400928!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.6985782768857!2d-46.7652741894504!3d-23.54334127872382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ceff4354425523%3A0xd99c29683fe4986e!2sP%C3%A1tio%20Osasco%20Open%20Mall!5e0!3m2!1spt-BR!2sbr!4v1739385881071!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
         </section>
 
@@ -105,7 +145,7 @@
           
                 <div class="faq">
                   <button class="accordion">
-                    O que é a EcoScooters?
+                    Como funciona o rastreamento veicular da DHC?
                     <i class="fa-solid fa-chevron-down"></i>
                   </button>
                   <div class="pannel">
@@ -197,9 +237,9 @@
                         <li><a href="#perguntas">Perguntas</a></li>
                 </div>
                 <div class="footer-col">
-                    <h4>Alugar</h4>
+                    <h4>Associação</h4>
                     <ul>
-                        <li><a href="#modelos">Modelos</a></li>
+                        <li><a href="#modelos">Cotação</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">

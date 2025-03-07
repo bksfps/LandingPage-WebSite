@@ -461,6 +461,35 @@ body {
     border-radius: 15px;
 }
 
+.btn-regulamento {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: black;
+    background-color: var(--white);
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.btn-regulamento:hover {
+    background-color: var(--bluedark);
+    color: var(--white);
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .btn-regulamento {
+        font-size: 3vw;
+        padding: 10px 20px;
+    }
+}
+
+
 @media (max-width: 1280px) {
     .contentsobre h2 {
         font-size: 4vw;

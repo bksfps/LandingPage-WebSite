@@ -39,7 +39,7 @@ body {
     background-color:#DDDDDD;
     padding: 20px 20px 20px 15px;
 }
-.logo img {width: 60px;}
+.logo img {width: 200px;}
 .menu {display: flex;}
 .menu li {padding-left: 30px;}
 .menu li a {
@@ -543,6 +543,12 @@ body {
     }
 }
 
+.int-section {
+    font-size: 2rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
 .fourth-section {
     display: flex;
     align-items: center;
@@ -557,10 +563,6 @@ body {
     max-width: 600px;
 }
 
-.fourth-section .box h1 {
-    font-size: 3rem;
-    padding: 1.5rem;
-}
 
 .fourth-section .box p {
     font-size: 1.5rem;
@@ -768,6 +770,7 @@ iframe:hover {
 }
 }
 
+
 /* #zap:hover {
     fill: var(--green);
     transition: 0.4s ease-in-out;
@@ -780,25 +783,40 @@ iframe:hover {
  */
 
 
-#whatsapp .wtsapp {
+ #whatsapp .wtsapp {
     position: fixed;
-    transform: all .5s ease;
     background-color: #25d366;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     text-align: center;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     border-radius: 50px;
-    border-right: none;
     color: #fff;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 16px;
     bottom: 70px;
-    left: 20px;
+    right: 20px;
     border: 0;
     z-index: 9999;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
+    padding: 10px 15px;
+    width: auto;
+    height: auto;
+}
+
+#whatsapp .wtsapp i {
+    font-size: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+#whatsapp .wtsapp text {
+    font-size: 14px;
+    display: none;
+}
+
+#whatsapp .wtsapp:hover text {
+    display: inline-block;
 }
 
 #whatsapp .wtsapp::before {
@@ -813,19 +831,28 @@ iframe:hover {
     height: 60px;
     background-color: #25d366;
     border-radius: 50%;
-    -webkit-animation: pulse-border 1500ms ease-out infinite;
+    opacity: 1; /* Inicialmente visível */
+    -webkit-animation: pulse-border 1500ms ease-out infinite; /* Animação do pulse ativa inicialmente */
     animation: pulse-border 1500ms ease-out infinite;
 }
 
-#whatsapp .wtsapp:focus {
-    border: none;
-    outline: none;
+#whatsapp .wtsapp:hover::before {
+    animation: none; /* Remove a animação do pulse quando o hover ocorre */
+    opacity: 0; /* Remove a visibilidade do pulse ao dar hover */
 }
 
 @keyframes pulse-border {
-    0%{transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1); opacity: 1;}
-    100%{transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5); opacity: 1;}
+    0% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+        opacity: 1;
+    }
 }
+
+
 
 
 .cota-section {
